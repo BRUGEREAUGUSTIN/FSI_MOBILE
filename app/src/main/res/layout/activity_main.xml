@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activities.MainActivity">
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="0dp"
+        android:layout_height="555dp"
+        android:layout_marginTop="60dp"
+        android:orientation="vertical"
+        android:padding="22dp"
+        app:layout_constraintBottom_toTopOf="@+id/view5"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="155dp"
+            android:layout_height="155dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="60dp"
+            android:layout_marginBottom="15dp"
+            android:background="@drawable/fsi_logo"
+            android:contentDescription="@string/todo"
+            android:maxHeight="50dp"
+            tools:ignore="ImageContrastCheck" />
+
+        <EditText
+            android:id="@+id/LoginConnexion"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_marginBottom="15dp"
+            android:autofillHints=""
+            android:background="@drawable/plain_text_border"
+            android:drawableStart="@drawable/custom_email_icon"
+            android:drawablePadding="12dp"
+            android:ems="10"
+            android:hint="@string/adresse_e_mail"
+            android:inputType="textPersonName"
+            android:paddingStart="12dp"
+            android:paddingEnd="12dp"
+            android:textColorHint="#757575"
+            tools:ignore="TextContrastCheck" />
+
+        <EditText
+            android:id="@+id/MdpConnexion"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_marginBottom="10dp"
+            android:autofillHints=""
+            android:background="@drawable/plain_text_border"
+            android:drawableStart="@drawable/custom_lock_icon"
+            android:drawablePadding="12dp"
+            android:ems="10"
+            android:hint="@string/mot_de_passe"
+            android:inputType="none|textWebPassword"
+            android:paddingStart="12dp"
+            android:paddingEnd="12dp"
+            android:textColorHint="#757575"
+            tools:ignore="TextContrastCheck" />
+
+        <Button
+            android:id="@+id/BoutonConnexion"
+            android:layout_width="match_parent"
+            android:layout_height="49dp"
+            android:layout_marginBottom="10dp"
+            android:text="@string/connexion"
+            android:textColor="#3E2723"
+            app:cornerRadius="12dp"
+            tools:ignore="TextContrastCheck,TextContrastCheck" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:layout_marginTop="0dp"
+            android:layout_marginBottom="15dp"
+            android:gravity="center_horizontal"
+            android:orientation="horizontal"
+            android:weightSum="100">
+
+            <TextView
+                android:id="@+id/ErreurConnexion"
+                android:layout_width="212dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:drawablePadding="12dp"
+                android:paddingStart="12dp"
+                android:paddingEnd="12dp"
+                android:textAlignment="gravity"
+                android:textColor="#FF0000"
+                android:textStyle="bold"
+                tools:layout_weight="50" />
+
+            <TextView
+                android:id="@+id/MdpOublieConnexion"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center|right"
+                android:layout_weight="0"
+                android:text="@string/mot_de_passe_oubli"
+                android:textAlignment="textEnd"
+                android:textColor="@color/white"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                tools:fontFamily="sans-serif"
+                tools:layout_weight="50" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <View
+        android:id="@+id/view5"
+        android:layout_width="0dp"
+        android:layout_height="2dp"
+        android:layout_marginBottom="1dp"
+        android:background="@color/material_dynamic_neutral90"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="397dp"
+        android:layout_height="21dp"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal"
+        android:weightSum="100"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/view5"
+        tools:textAlignment="center">
+
+        <TextView
+            android:id="@+id/textView7"
+            android:layout_width="47dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="0"
+            android:text="@string/_2021_2023"
+            android:textAlignment="viewEnd"
+            tools:layout_weight="50" />
+
+        <TextView
+            android:id="@+id/BoutonSincrireConnexion"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0"
+            android:paddingStart="10dp"
+            android:text="@string/fasters"
+            android:textAlignment="viewStart"
+            android:textColor="#0699FD"
+            android:textStyle="bold"
+            tools:layout_weight="50" />
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

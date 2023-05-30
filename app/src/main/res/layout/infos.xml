@@ -1,0 +1,361 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ScrollView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toTopOf="@id/navbarNote"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textView12"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/colorPrimary"
+                android:padding="15dp"
+                android:text="@string/mes_informations_gros"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textSize="20sp" />
+
+            <LinearLayout
+                android:layout_width="409dp"
+                android:layout_height="671dp"
+                android:baselineAligned="false"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="35"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/textView2"
+                        android:layout_width="match_parent"
+                        android:layout_height="45dp"
+                        android:background="#E7EFFD"
+                        android:gravity="center_vertical"
+                        android:text="@string/nomInfo"
+                        android:textAlignment="textEnd"
+                        android:textAllCaps="true"
+                        android:textColor="@color/black"
+                        android:textSize="16sp"
+                        tools:textAlignment="textStart" />
+
+                    <TextView
+                        android:id="@+id/textView4"
+                        android:layout_width="match_parent"
+                        android:layout_height="45dp"
+                        android:gravity="center_vertical"
+                        android:text="@string/prenom"
+                        android:textAlignment="textEnd"
+                        android:textAllCaps="true"
+                        android:textColor="@color/black"
+                        android:textSize="16sp"
+                        tools:textAlignment="textStart" />
+
+                    <TextView
+                        android:id="@+id/textView5"
+                        android:layout_width="match_parent"
+                        android:layout_height="45dp"
+                        android:background="#E7EFFD"
+                        android:gravity="center_vertical"
+                        android:text="@string/loginInfo"
+                        android:textAlignment="textEnd"
+                        android:textAllCaps="true"
+                        android:textColor="@color/black"
+                        android:textSize="16sp"
+                        tools:textAlignment="textStart" />
+
+                    <TextView
+                        android:id="@+id/textView6"
+                        android:layout_width="match_parent"
+                        android:layout_height="45dp"
+                        android:gravity="center_vertical"
+                        android:text="@string/ville"
+                        android:textAlignment="textEnd"
+                        android:textAllCaps="true"
+                        android:textColor="@color/black"
+                        android:textSize="16sp"
+                        tools:textAlignment="textStart" />
+
+                    <TextView
+                        android:id="@+id/textView8"
+                        android:layout_width="match_parent"
+                        android:layout_height="45dp"
+                        android:background="#E7EFFD"
+                        android:gravity="center_vertical"
+                        android:text="@string/nom_de_la_rue"
+                        android:textAlignment="textEnd"
+                        android:textAllCaps="true"
+                        android:textColor="@color/black"
+                        android:textSize="16sp"
+                        tools:textAlignment="textStart" />
+
+                    <TextView
+                        android:id="@+id/textView9"
+                        android:layout_width="match_parent"
+                        android:layout_height="45dp"
+                        android:gravity="center_vertical"
+                        android:text="@string/num_ro_de_rue"
+                        android:textAlignment="textEnd"
+                        android:textAllCaps="true"
+                        android:textColor="@color/black"
+                        android:textSize="16sp"
+                        tools:textAlignment="textStart" />
+
+                    <TextView
+                        android:id="@+id/textView10"
+                        android:layout_width="match_parent"
+                        android:layout_height="45dp"
+                        android:background="#E7EFFD"
+                        android:gravity="center_vertical"
+                        android:text="@string/code_postal"
+                        android:textAlignment="textEnd"
+                        android:textAllCaps="true"
+                        android:textColor="@color/black"
+                        android:textSize="16sp"
+                        tools:textAlignment="textStart" />
+
+                    <TextView
+                        android:id="@+id/textView11"
+                        android:layout_width="match_parent"
+                        android:layout_height="45dp"
+                        android:gravity="center_vertical"
+                        android:text="@string/telephone"
+                        android:textAlignment="textEnd"
+                        android:textAllCaps="true"
+                        android:textColor="@color/black"
+                        android:textSize="16sp"
+                        tools:textAlignment="textStart" />
+
+                    <TextView
+                        android:id="@+id/textView19"
+                        android:layout_width="match_parent"
+                        android:layout_height="45dp"
+                        android:background="#E7EFFD"
+                        android:gravity="center_vertical"
+                        android:text="@string/email"
+                        android:textAlignment="textEnd"
+                        android:textAllCaps="true"
+                        android:textColor="@color/black"
+                        android:textSize="16sp"
+                        tools:textAlignment="textStart" />
+
+                    <TextView
+                        android:id="@+id/textView20"
+                        android:layout_width="match_parent"
+                        android:layout_height="45dp"
+                        android:gravity="center_vertical"
+                        android:text="@string/classe"
+                        android:textAlignment="textEnd"
+                        android:textAllCaps="true"
+                        android:textColor="@color/black"
+                        android:textSize="16sp"
+                        tools:textAlignment="textStart" />
+
+                    <TextView
+                        android:id="@+id/textView21"
+                        android:layout_width="match_parent"
+                        android:layout_height="45dp"
+                        android:background="#E7EFFD"
+                        android:gravity="center_vertical"
+                        android:text="@string/sp_cialit"
+                        android:textAlignment="textEnd"
+                        android:textAllCaps="true"
+                        android:textColor="@color/black"
+                        android:textSize="16sp"
+                        tools:textAlignment="textStart" />
+
+                    <TextView
+                        android:id="@+id/textView22"
+                        android:layout_width="match_parent"
+                        android:layout_height="45dp"
+                        android:gravity="center_vertical"
+                        android:text="@string/ma_tre_de_stage"
+                        android:textAlignment="textEnd"
+                        android:textAllCaps="true"
+                        android:textColor="@color/black"
+                        android:textSize="16sp"
+                        tools:textAlignment="textStart" />
+
+                    <TextView
+                        android:id="@+id/textView23"
+                        android:layout_width="match_parent"
+                        android:layout_height="45dp"
+                        android:background="#E7EFFD"
+                        android:gravity="center_vertical"
+                        android:text="@string/entrepriseInfo"
+                        android:textAlignment="textEnd"
+                        android:textAllCaps="true"
+                        android:textColor="@color/black"
+                        android:textSize="16sp"
+                        tools:textAlignment="textStart" />
+
+                    <TextView
+                        android:id="@+id/textView24"
+                        android:layout_width="match_parent"
+                        android:layout_height="45dp"
+                        android:gravity="center_vertical"
+                        android:text="@string/professeur"
+                        android:textAlignment="textEnd"
+                        android:textAllCaps="true"
+                        android:textColor="@color/black"
+                        android:textSize="16sp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="65"
+                    android:orientation="vertical"
+                    android:textAlignment="center">
+
+                    <TextView
+                        android:id="@+id/textViewNom"
+                        android:layout_width="match_parent"
+                        android:layout_height="45dp"
+                        android:background="#E7EFFD"
+                        android:gravity="center_vertical"
+                        android:textAlignment="center"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:id="@+id/textViewPrenom"
+                        android:layout_width="match_parent"
+                        android:layout_height="45dp"
+                        android:gravity="center_vertical"
+                        android:textAlignment="center"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:id="@+id/textViewLogin"
+                        android:layout_width="match_parent"
+                        android:layout_height="45dp"
+                        android:background="#E7EFFD"
+                        android:gravity="center_vertical"
+                        android:textAlignment="center"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:id="@+id/textViewVille"
+                        android:layout_width="match_parent"
+                        android:layout_height="45dp"
+                        android:gravity="center_vertical"
+                        android:textAlignment="center"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:id="@+id/textViewRue"
+                        android:layout_width="match_parent"
+                        android:layout_height="45dp"
+                        android:background="#E7EFFD"
+                        android:gravity="center_vertical"
+                        android:textAlignment="center"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:id="@+id/textViewNumRue"
+                        android:layout_width="match_parent"
+                        android:layout_height="45dp"
+                        android:gravity="center_vertical"
+                        android:textAlignment="center"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:id="@+id/textViewCp"
+                        android:layout_width="match_parent"
+                        android:layout_height="45dp"
+                        android:background="#E7EFFD"
+                        android:gravity="center_vertical"
+                        android:textAlignment="center"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:id="@+id/textViewTel"
+                        android:layout_width="match_parent"
+                        android:layout_height="45dp"
+                        android:gravity="center_vertical"
+                        android:textAlignment="center"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:id="@+id/textViewEmail"
+                        android:layout_width="match_parent"
+                        android:layout_height="45dp"
+                        android:background="#E7EFFD"
+                        android:gravity="center_vertical"
+                        android:textAlignment="center"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:id="@+id/textViewClasse"
+                        android:layout_width="match_parent"
+                        android:layout_height="45dp"
+                        android:gravity="center_vertical"
+                        android:textAlignment="center"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:id="@+id/textViewSpe"
+                        android:layout_width="match_parent"
+                        android:layout_height="45dp"
+                        android:background="#E7EFFD"
+                        android:gravity="center_vertical"
+                        android:textAlignment="center"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:id="@+id/textViewMds"
+                        android:layout_width="match_parent"
+                        android:layout_height="45dp"
+                        android:gravity="center_vertical"
+                        android:textAlignment="center"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:id="@+id/textViewEnt"
+                        android:layout_width="match_parent"
+                        android:layout_height="45dp"
+                        android:background="#E7EFFD"
+                        android:gravity="center_vertical"
+                        android:textAlignment="center"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:id="@+id/textViewProf"
+                        android:layout_width="match_parent"
+                        android:layout_height="45dp"
+                        android:gravity="center_vertical"
+                        android:textAlignment="center"
+                        android:textSize="16sp" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/navbarNote"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:menu="@menu/menunavbar" >
+
+    </com.google.android.material.bottomnavigation.BottomNavigationView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

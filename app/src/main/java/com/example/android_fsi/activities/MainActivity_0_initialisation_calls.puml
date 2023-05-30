@@ -1,0 +1,162 @@
+@startuml
+
+/' diagram meta data start
+config=CallConfiguration;
+{
+  "rootMethod": "com.example.android_fsi.activities.MainActivity#initialisation()",
+  "projectClassification": {
+    "searchMode": "OpenProject", // OpenProject, AllProjects
+    "includedProjects": "",
+    "pathEndKeywords": "*.impl",
+    "isClientPath": "",
+    "isClientName": "",
+    "isTestPath": "",
+    "isTestName": "",
+    "isMappingPath": "",
+    "isMappingName": "",
+    "isDataAccessPath": "",
+    "isDataAccessName": "",
+    "isDataStructurePath": "",
+    "isDataStructureName": "",
+    "isInterfaceStructuresPath": "",
+    "isInterfaceStructuresName": "",
+    "isEntryPointPath": "",
+    "isEntryPointName": "",
+    "treatFinalFieldsAsMandatory": false
+  },
+  "graphRestriction": {
+    "classPackageExcludeFilter": "",
+    "classPackageIncludeFilter": "",
+    "classNameExcludeFilter": "",
+    "classNameIncludeFilter": "",
+    "methodNameExcludeFilter": "",
+    "methodNameIncludeFilter": "",
+    "removeByInheritance": "", // inheritance/annotation based filtering is done in a second step
+    "removeByAnnotation": "",
+    "removeByClassPackage": "", // cleanup the graph after inheritance/annotation based filtering is done
+    "removeByClassName": "",
+    "cutMappings": false,
+    "cutEnum": true,
+    "cutTests": true,
+    "cutClient": true,
+    "cutDataAccess": true,
+    "cutInterfaceStructures": true,
+    "cutDataStructures": true,
+    "cutGetterAndSetter": true,
+    "cutConstructors": true
+  },
+  "graphTraversal": {
+    "forwardDepth": 3,
+    "backwardDepth": 3,
+    "classPackageExcludeFilter": "",
+    "classPackageIncludeFilter": "",
+    "classNameExcludeFilter": "",
+    "classNameIncludeFilter": "",
+    "methodNameExcludeFilter": "",
+    "methodNameIncludeFilter": "",
+    "hideMappings": false,
+    "hideDataStructures": false,
+    "hidePrivateMethods": true,
+    "hideInterfaceCalls": true, // indirection: implementation -> interface (is hidden) -> implementation
+    "onlyShowApplicationEntryPoints": false, // root node is included
+    "useMethodCallsForStructureDiagram": "ForwardOnly" // ForwardOnly, BothDirections, No
+  },
+  "details": {
+    "aggregation": "GroupByClass", // ByClass, GroupByClass, None
+    "showMethodParametersTypes": false,
+    "showMethodParametersNames": false,
+    "showMethodReturnType": false,
+    "showPackageLevels": 2,
+    "showCallOrder": false,
+    "edgeMode": "MethodsOnly", // TypesOnly, MethodsOnly, TypesAndMethods, MethodsAndDirectTypeUsage
+    "showDetailedClassStructure": false
+  },
+  "rootClass": "com.example.android_fsi.activities.MainActivity",
+  "extensionCallbackMethod": "" // qualified.class.name#methodName - signature: public static String method(String)
+}
+diagram meta data end '/
+
+
+
+digraph g {
+    rankdir="LR"
+    splines=polyline
+    
+
+'nodes 
+subgraph cluster_1322970774 { 
+   	label=example
+	labeljust=l
+	fillcolor="#ececec"
+	style=filled
+   
+   subgraph cluster_824581352 { 
+   	label=android_fsi
+	labeljust=l
+	fillcolor="#d8d8d8"
+	style=filled
+   
+   subgraph cluster_1873851213 { 
+   	label=DatabaseManager
+	labeljust=l
+	fillcolor=white
+	style=filled
+   
+   DatabaseManager141391447XXXdelete0[
+	label="+ delete()"
+	style=filled
+	fillcolor=white
+	tooltip="DatabaseManager
+
+null"
+	fontcolor=darkgreen
+];
+
+DatabaseManager141391447XXXinsertData1122634193[
+	label="+ insertData()"
+	style=filled
+	fillcolor=white
+	tooltip="DatabaseManager
+
+null"
+	fontcolor=darkgreen
+];
+
+DatabaseManager141391447XXXonCreate1414374969[
+	label="+ onCreate()"
+	style=filled
+	fillcolor=white
+	tooltip="DatabaseManager
+
+null"
+	fontcolor=darkgreen
+];
+} 
+
+subgraph cluster_310371446 { 
+   	label=MainActivity
+	labeljust=l
+	fillcolor=white
+	style=filled
+   
+   MainActivity1335109312XXXinitialisation0[
+	label="+ initialisation()"
+	style=filled
+	fillcolor=white
+	tooltip="MainActivity
+
+null"
+	penwidth=4
+	fontcolor=darkgreen
+];
+} 
+} 
+} 
+
+'edges    
+DatabaseManager141391447XXXdelete0 -> DatabaseManager141391447XXXonCreate1414374969;
+MainActivity1335109312XXXinitialisation0 -> DatabaseManager141391447XXXdelete0;
+MainActivity1335109312XXXinitialisation0 -> DatabaseManager141391447XXXinsertData1122634193;
+    
+}
+@enduml

@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activities.FragmentNotes">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <ScrollView
+        android:id="@+id/scrollViewNoteBilan1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:layout_editor_absoluteX="4dp"
+        tools:layout_editor_absoluteY="130dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/TitreDateNoteBilan2"
+                android:layout_width="match_parent"
+                android:layout_height="38dp"
+                android:background="@color/design_default_color_primary"
+                android:text="@string/date"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textSize="24sp" />
+
+            <TextView
+                android:id="@+id/dateBilan2"
+                android:layout_width="match_parent"
+                android:layout_height="51dp"
+                android:textAlignment="center"
+                android:textColor="@color/design_default_color_primary"
+                android:textSize="34sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="#E7EFFD"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:weightSum="100">
+
+                <TextView
+                    android:id="@+id/CoefDosBilan2"
+                    android:layout_width="140dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="12dp"
+                    android:layout_weight="0"
+                    android:background="@color/white"
+                    android:gravity="center_vertical"
+                    android:paddingStart="2dp"
+                    android:paddingEnd="2dp"
+                    android:text="@string/coef_1"
+                    android:textColor="@color/black"
+                    android:textSize="20sp"
+                    tools:layout_weight="40" />
+
+                <TextView
+                    android:id="@+id/TextDosBilan2"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="50"
+                    android:gravity="center_vertical"
+                    android:paddingStart="12dp"
+                    android:text="@string/dossier"
+                    android:textColor="@color/black"
+                    android:textSize="20sp" />
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/NoteDosBilan2"
+                android:layout_width="match_parent"
+                android:layout_height="59dp"
+                android:paddingStart="12dp"
+                android:textColor="@color/design_default_color_primary"
+                android:textSize="34sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="#E7EFFD"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:weightSum="100">
+
+                <TextView
+                    android:id="@+id/CoefOraBilan2"
+                    android:layout_width="140dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="12dp"
+                    android:layout_weight="0"
+                    android:background="@color/white"
+                    android:gravity="center_vertical"
+                    android:paddingStart="2dp"
+                    android:paddingEnd="2dp"
+                    android:text="@string/coef_1"
+                    android:textColor="@color/black"
+                    android:textSize="20sp"
+                    tools:layout_weight="40" />
+
+                <TextView
+                    android:id="@+id/TextOraBilan2"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="50"
+                    android:gravity="center_vertical"
+                    android:paddingStart="12dp"
+                    android:text="@string/oral"
+                    android:textColor="@color/black"
+                    android:textSize="20sp" />
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/NoteOraBilan2"
+                android:layout_width="match_parent"
+                android:layout_height="59dp"
+                android:paddingStart="12dp"
+                android:textColor="@color/design_default_color_primary"
+                android:textSize="34sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:background="#E7EFFD"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:weightSum="100">
+
+                <TextView
+                    android:id="@+id/TextRemBilan2"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="50"
+                    android:gravity="center_vertical"
+                    android:paddingStart="12dp"
+                    android:text="@string/remarques_ventuelles"
+                    android:textColor="@color/black"
+                    android:textSize="20sp" />
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/ComBilan2"
+                android:layout_width="match_parent"
+                android:layout_height="380dp"
+                android:paddingStart="12dp"
+                android:paddingTop="12dp"
+                android:textColor="@color/design_default_color_primary"
+                android:textSize="24sp" />
+
+        </LinearLayout>
+    </ScrollView>
+
+</FrameLayout>

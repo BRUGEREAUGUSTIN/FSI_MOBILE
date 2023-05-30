@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center_vertical"
+    android:background="@drawable/rm222batch3_kul_04">
+
+    <LinearLayout
+        android:id="@+id/linearLayout5"
+        android:layout_width="409dp"
+        android:layout_height="750dp"
+        android:gravity="center_vertical"
+        android:orientation="vertical"
+        android:padding="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="365dp"
+            android:layout_height="118dp"
+            android:layout_gravity="end"
+            app:srcCompat="@drawable/fsi_logo"
+            tools:maxHeight="10px" />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:text="@string/mon_espace_eleve"
+            android:textAlignment="center"
+            android:textSize="24sp" />
+
+        <LinearLayout
+            android:layout_width="390dp"
+            android:layout_height="199dp"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/textViewNom"
+                    android:layout_width="match_parent"
+                    android:layout_height="8dp"
+                    android:layout_weight="1"
+                    android:elegantTextHeight="true"
+                    android:gravity="center_vertical"
+                    android:textAlignment="center"
+                    android:textAllCaps="true"
+                    android:textColor="#499C54"
+                    android:textSize="34sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/textViewClasse"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:elegantTextHeight="true"
+                    android:textAlignment="center"
+                    android:textAllCaps="true"
+                    android:textColor="@color/black"
+                    android:textSize="24sp"
+                    tools:ignore="TextContrastCheck" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/buttonVoirInfo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/voir_mes_infos"
+            app:cornerRadius="16dp"
+            tools:ignore="TextContrastCheck" />
+
+        <Button
+            android:id="@+id/buttonConsulterNotes"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/consulter_mes_notes"
+            app:cornerRadius="16dp" />
+
+        <Button
+            android:id="@+id/buttonDeconnexion"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/d_connexion"
+            app:cornerRadius="16dp"
+            app:iconGravity="end"
+            tools:icon="@drawable/ic_baseline_logout_24"
+            tools:iconPadding="12dp" />
+
+    </LinearLayout>
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottomNavigationViewAccueil"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:menu="@menu/menunavbar" />
+</androidx.constraintlayout.widget.ConstraintLayout>
